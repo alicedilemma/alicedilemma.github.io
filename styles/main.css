@@ -12,3 +12,8 @@ nav {
 p {
     font-family: 'Karla', sans-serif;
 }
+
+.blog-post {
+    border: 2px solid black;
+    color: pink;
+}

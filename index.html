@@ -1,27 +1,52 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Alice's EDA Blog</title>
-    <meta charset="UTF-8">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Oswald" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <title>Alice's EDA Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link href="styles/main.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Oswald" rel="stylesheet">
+</head>
 
-    <header>
-      <h1>Alice Gatland</h1> 
-      <nav>
-        <a href="/index.html">Home</a>
-        <a href ="#">About</a>
-        <a href ="#">Contact</a>
-      </nav>
-    </header>
-    <main>
-      <p> This is the beginning of my website home page.</p>
-      <p> It will eventually contain a list of links to all my blogs. </p>
-      <a href="/blog/sprint1-technical.html">A blog post!</a>
-    </main>
-    
-  </body>
+<body>
+  
+  <section class="hero is-medium">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Alice Gatland</h1>
+        <nav class="navbar">
+          <a href="/index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <main role="main">
+    <div class="columns is-mobile">
+      <div class="column is-1"></div>
+      <div class="column is-10">
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="tile blog-post">
+              <p> This is the beginning of my website home page.</p>
+            </div>
+          </div>
+          <div class="column">
+            <p> It will eventually contain a list of links to all my blogs. </p>
+          </div>
+          <div class="column">
+            <a href="/blog/sprint1-technical.html">A blog post!</a>
+          </div>
+        </div>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+  </main>
+
+</body>
 
 </html>
