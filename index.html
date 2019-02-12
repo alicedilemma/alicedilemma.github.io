@@ -11,11 +11,11 @@
 </head>
 
 <body>
-  
+
   <section class="hero is-medium">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Alice Gatland</h1>
+        <h1 class="title is-1">Alice Gatland</h1>
         <nav class="navbar">
           <a href="/index.html">Home</a>
           <a href="#">About</a>
@@ -28,22 +28,38 @@
   <main role="main">
     <div class="columns is-mobile">
       <div class="column is-1"></div>
+
       <div class="column is-10">
-        <div class="columns">
-          <div class="column is-one-third">
-            <div class="tile blog-post">
-              <p> This is the beginning of my website home page.</p>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <!-- blog post tile -->
+            <div class="tile is-child box">
+              <p class="title">
+                <a href="/blog/sprint1-technical.html">A blog post!</a>
+              </p>
             </div>
           </div>
-          <div class="column">
-            <p> It will eventually contain a list of links to all my blogs. </p>
+          <div class="tile is-parent is-vertical">
+            <!-- blog post tile -->
+            <div class="tile is-child box">
+              <p class="title">
+                <a href="#">A blog post placeholder!</a>
+              </p>
+            </div>
           </div>
-          <div class="column">
-            <a href="/blog/sprint1-technical.html">A blog post!</a>
+          <div class="tile is-parent is-vertical">
+            <!-- blog post tile -->
+            <div class="tile is-child box">
+              <p class="title">
+                <a href="#">A blog post placeholder!</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="column is-1"></div>
+    </div>
+
+    <div class="column is-1"></div>
     </div>
   </main>
 
