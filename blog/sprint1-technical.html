@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Blog Post</title>
+  <title>Blog Post | CSS Class vs. Id</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
@@ -12,47 +12,114 @@
 
 <body>
 
-  <section class="hero">
+  <header class="hero">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Alice Gatland</h1>
-        <nav class="navbar">
-          <a href="/index.html">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </nav>
+        <h1 class="title is-1">Alice's EDA Blog</h1>
       </div>
     </div>
-  </section>
+    <div class="hero-foot">
+      <hr>
+      <nav class="columns is-centered is-marginless is-gapless">
+        <div class="column is-2 nav-link">
+          <a href="/index.html">Blog</a>
+        </div>
+        <div class="column is-2 nav-link">
+          <a href="#">Placeholder</a>
+        </div>
+        <div class="column is-2 nav-link">
+          <a href="#">Placeholder</a>
+        </div>
+      </nav>
+      <hr>
+    </div>
+  </header>
 
-  <main role="main">
+  <main>
     <div class="columns is-mobile">
-      <div class="column is-1"></div>
-      <div class="column is-10">
-        <div class="content blog-content">
+      <div class="column is-2"></div>
+      <div class="column is-8">
+        <article class="content blog-content">
+          <!-- Blog content in here-->
           <h2 class="title is-1">
-            "I'm just not really into labels..."
+            ".pikachu I choose you!"
           </h2>
           <h3 class="subtitle is-4">
-            Best practice for using classes and ids
+            Using classes and IDs in your CSS
           </h3>
           <h4 class="subtitle">
             February 2019
           </h4>
-          <p> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          <p>
+            When working with CSS you use a <strong>selector</strong> to identify which HTML elements 
+            you want to style. For instance, if you wanted to style every <strong>&lt;p&gt;</strong> element
+            you would use:
           </p>
-          <p> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+          <figure class="has-text-left">
+            <pre><code>p {
+  /* All your fav CSS rules here */
+  }</code></pre>
+          </figure>
+          <p>
+            In this case <strong>p</strong> is your selector. But element types aren't 
+            your only option when it comes to selectors – you can make your own using classes and
+            IDs!
           </p>
-        </div>
+          <h5>Classes and IDs</h5>
+          <p>
+            The way you use classes and IDs is very similar.
+            To give an HTML element a class, add <strong>class="class-name"</strong> 
+            to that element. For example:
+          </p>
+          <figure class="has-text-left">
+            <pre><code>&lt;div class="wonderfully-descriptive-class-name"&gt;&lt;/div&gt;</code></pre>
+          </figure>
+          <p>
+            To give an HTML element an ID, add <strong>id="id-name"</strong> to that element.
+            For example:
+          </p>
+          <figure class="has-text-left">
+            <pre><code>&lt;div id="very-excellent-id-name"&gt;&lt;/div&gt;</code></pre>
+          </figure>
+          <p>
+            When you've given an element a class or ID you can create style rules that
+            apply specifically to elements with that class or ID. Note that to specify 
+            your selector is a class you will need to use a <strong>.</strong> at the 
+            beginning of the class name and to specify an ID use a <strong>#</strong> 
+            at the beginning of the ID name. 
+            For example:
+          </p>
+          <figure class="has-text-left">
+            <pre><code>.class-name {
+  /* Many wonderful CSS rules */
+  }
+      
+#id-name {
+  /* Maybe just one CSS rule in here, but it's a really good one */
+  }</code></pre>
+          </figure>
+          <h5>But which should I use?</h5>
+          <p>
+            Use a class when you want to apply that style multiple 
+            times on your page. You can reuse one class on multiple elements, and 
+            elements can have multiple classes applied to them.
+          </p>
+          <p>
+            Use an ID when you're styling one specific element. There should only 
+            be one element on your page using each ID.
+          </p>
+          <!-- Blog content ends here-->
+        </article>
       </div>
     </div>
     <div class="column is-1"></div>
     </div>
-
-    <!-- this is a comment. -->
   </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+    </div>
+  </footer>
 
 </body>
 
