@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blog Post | Technical Concepts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Oswald" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">Alice's EDA Blog</h1>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <hr>
+      <nav class="columns is-centered is-marginless is-gapless">
+        <div class="column is-2 nav-link">
+          <a href="/index.html">Blog</a>
+        </div>
+        <div class="column is-2 nav-link">
+          <a href="#">Placeholder</a>
+        </div>
+        <div class="column is-2 nav-link">
+          <a href="#">Placeholder</a>
+        </div>
+      </nav>
+      <hr>
+    </div>
+  </header>
+
+  <main>
+    <div class="columns is-mobile">
+      <div class="column is-2"></div>
+      <div class="column is-8">
+        <article class="content blog-content">
+          <!-- Blog content in here-->
+          <h2 class="title is-2">
+            "Programming at the pub"
+          </h2>
+          <h3 class="subtitle is-4">
+            Technical concepts for non-technical friends
+          </h3>
+          <h4 class="subtitle">
+            February 2019
+          </h4>
+          <h5>HTML and CSS</h5>
+          <p>
+            HTML and CSS are two different coding languages that we use together to make a website. 
+            HTML defines the structure and CSS defines the styling. Like if we were building a house, 
+            we might say the house should have 2 bedrooms, a kitchen and a bathroom. 
+            That’s our HTML. Then we might say, every bedroom should have yellow walls, the kitchen 
+            should be 5m by 3m, the bathroom should have a white floor. 
+            That's to do with the appearance, and would be the CSS.
+          </p>
+          <h5>Control flow and loops</h5>
+          <p>
+            Control flow is the order in which things happen in your code. Generally in JavaScript 
+            the code is run line by line, from the first line through to the last line. 
+            However, you can use 
+            certain structures to change the flow of your code and make it respond to different things.
+          </p>
+          <p>
+            For instance, a conditional. This is a piece of code that asks a question and responds 
+            differently depending on the answer. For example, I might say to you:
+          </p>
+          <code>
+            I want you to go to the supermarket. If they have bananas, then buy me a banana. 
+            Otherwise, buy me an apple.
+          </code>
+          <p>
+            If I wanted to ask the computer to do that for me in JavaScript, I could structure my question 
+            like this:
+          </p>
+          <pre><code>if (there are bananas at the supermarket) {
+  buy me a banana;
+} else {
+  buy me an apple;
+}</code></pre>
+          <p>
+            The code checks whether something is true, in this case whether there are bananas, and runs 
+            a different bit of code depending on the answer.
+          </p>
+            Another example is a loop, which lets you do something repeatedly while certain conditions are true.
+            For example, let’s say you’re drinking a coffee. You get given the coffee, 
+            you take a sip. Now you’ve drank some of the coffee, but there’s still some left, 
+            so you take another sip. You want to keep repeating that action of 'taking a sip' until there is 
+            no coffee left.
+          </p>
+          <p>
+            For a computer, I could write this process with a <strong>while loop</strong>:
+          </p>
+          <pre><code>while (there is coffee left) {
+  take a sip;
+  }
+  put mug in dishwasher;</code></pre>
+          <p>
+            The <strong>take a sip</strong> part of the code will run again and again while there is still coffee left. 
+            When there is no coffee left the code will move onto the next step, putting your mug in the dishwasher.
+          </p>
+          <h5>The DOM</h5>
+          <p>
+            The Document Object Model (DOM) is the browser's interpretation of the HTML code that makes up your website.
+            It represents the page and acts as an interface, so you can use programs to interact with the page's structure, 
+            style and content.
+          </p>
+          <p>
+            The DOM is not specific to a particular programming language, but it can be used to let JavaScript 
+            interact with your website. It interprets a document (the web page) using a hierarchical structure 
+            of nodes and objects. This creates a model that your JavaScript can interact with.
+          </p>
+          <p>
+            The root of the hierarchy is the <strong>window object</strong>. This level is used for 
+            anything you might want to control to do with the container that your web page is displayed in. 
+            For instance accessing the current URL, or fiddling with the scrollbar.
+          </p>
+          <p>    
+            Next is the <strong>document object</strong>. This gives access to all the HTML elements on your 
+            page and what gets shown. But it isn't read-only, you can also manipulate the document. For example, 
+            using JavaScript to add an element to your page. It can also listen and react to events, like a 
+            user clicking on something.    
+          </p>
+          <h5>Arrays vs. objects</h5>
+          <p>
+            An array is a list – like a shopping list. It has different things on the list, in order.
+            To access a piece of information you can say where it lives on the list. 
+            I could ask the computer to <strong>give me the 3rd item on the shopping list array</strong> 
+            and the computer will look at the list, find the third item, and tell me what it is.
+          </p>
+          <p>
+            An object is like a filing cabinet. Each drawer has a label and a piece of information inside. 
+            For example, I could have a filing cabinet for all my personal information. I might have a drawer 
+            with my birthday, a drawer with my IRD number and a drawer with my phone number. To get a piece  
+            of information from the filing cabinet, I say to the computer <strong>look in my Alice  
+            object and find the drawer labelled birthday</strong>. The computer would then 
+            go to that object, find the right label and give me the piece of information stored there.
+          </p>
+          <h5>Functions</h5>
+          <p>
+            A function is a set of instructions that you group together so you can use them again 
+            and again. When you give a computer instructions, through code, you have to break 
+            things down into very simple steps. For example, if I wanted my computer to 
+            make a cup of tea I might give it some instructions:
+          </p>
+          <ol>
+            <li>Fill the kettle with water</li>
+            <li>Turn on the kettle</li>
+            <li>Get a cup</li>
+            <li>Put a teabag in the cup</li>
+            <li>etc.</li>
+          </ol>
+          <p>
+            But if I wanted to have a cup of tea every morning, I wouldn't want to have to keep telling 
+            the computer all these instructions. So what I do is give that set of instructions a name, 
+            like 'make cup of tea', that refers to all the steps involved with making a cup of tea. 
+            Now I can just say to the computer <strong>make cup of tea</strong> and the computer 
+            can go back at look at that function and see all the steps required to make my tea.
+          </p>
+          <!-- Blog content ends here-->
+        </article>
+      </div>
+    </div>
+    <div class="column is-1"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+    </div>
+  </footer>
+
+</body>
+
+</html>
