@@ -40,18 +40,25 @@ body {
 }
 
 hr {
-    background-color: pink;
     height: 5px;
     margin: 5px 8.3vw 5px 8.3vw;
     border-radius: 5px;
 }
 
-.blog-post {
-    border: 2px solid black;
+.blog-post-link h2 {
+    color: white !important;
 }
 
-.blog-content {
+.background-yellow {
+    background-image: url(/img/yellow.png)
+}
 
+.background-pink {
+    background-image: url(/img/pink.png)
+}
+
+.background-green {
+    background-image: url(/img/green.png)
 }
 
 main {
