@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blog Post | Problem-solving</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Karla|Oswald" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">Alice's EDA Blog</h1>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <hr>
+      <nav class="columns is-centered is-marginless is-gapless">
+        <div class="column is-2 nav-link">
+          <a href="/index.html">Blog</a>
+        </div>
+        <div class="column is-2 nav-link">
+          <a href="#">Placeholder</a>
+        </div>
+        <div class="column is-2 nav-link">
+          <a href="#">Placeholder</a>
+        </div>
+      </nav>
+      <hr>
+    </div>
+  </header>
+
+  <main>
+    <div class="columns is-mobile">
+      <div class="column is-2"></div>
+      <div class="column is-8">
+        <article class="content blog-content">
+          <!-- Blog content in here-->
+          <h2 class="title is-2">
+            "Rubber duckie, you're the one"
+          </h2>
+          <h3 class="subtitle is-4">
+            Problem-solving techniques for devs
+          </h3>
+          <h4 class="subtitle">
+            February 2019
+          </h4>
+          <h5>A time I got blocked on a simple problem</h5>
+          <p>
+            I got blocked while writing one of the functions for the Built-in Methods kata. 
+            The function takes an array of objects, each object contains a door and a person hiding 
+            behind that door. It uses the find() method to return the first door it finds that has 
+            Scooby Doo hiding behind it.
+          </p>
+          <p>
+            The find() method was something I hadn’t used before, so my first problem solving steps  
+            were google and giving it a try. I found an example and wrote the function how I thought it 
+            should go, but it didn't work.
+          </p>
+            I wasn’t sure whether I was using find() incorrectly of if I had other issues in my code, 
+            so at this stage I started using console.log() at various points in my function 
+            to track my variables. This helped me find two errors:
+          <ol>
+            <li>In my if statement I was using a single = instead of checking equality with ===</li>
+            <li>I had gotten confused about what layer of object I was in, which is why I kept getting 
+              undefined instead of an actual door value</li>
+          </ol>
+          <p>
+            Now I was pretty confident I had fixed the other mistakes I went back to my reduce() method, 
+            took another look at google, and got it working.
+          </p>
+          <p>
+            This instance of getting stuck happened after I had continued working when I knew I needed to 
+            take a break. I remember thinking before that kata that I should stop for a while, but then 
+            getting sucked into doing just a little bit more. I think that contributed to having so 
+            many different little problems that I didn’t see straight away. This is a good reminder for 
+            myself, I can easily get sucked into fun challenges and find it hard to give my brain some time off. 
+            I think that if I had gone outside for a few minutes and come back to this block I would have 
+            solved it much quicker.
+          </p>
+          <h5>A time I solved a problem in an elegant way</h5>
+          <p>
+            I felt that I solved the FizzBuzz kata very effectively. The kata involved creating a 
+            function that took an array, followed a set of rules to transform some of the numbers into words, 
+            and returned the new array.
+          </p>
+          <p>
+            I first used pseudocode to list out the steps, which resulted in a clear blueprint for writing 
+            the function. From that I was able to see the problem very clearly and managed to write it no problem, 
+            with only slight improvements from my pseudocode steps to my actual code.
+          </p>
+          <p>
+            I felt calm and focused throughout the process. I think if that kata’s instructions hadn’t specifically 
+            asked me to use pseudocode, I wouldn’t have – I had a pretty good idea already of how the function 
+            would run and would have jumped straight to writing it. But taking the time to write out the pseudocode 
+            first made the problem-solving process run very smoothly. I suspect if I hadn’t taken that step 
+            I would have had more small mistakes crop up and generally have worked slower.
+          </p>
+          <h5>Problem solving techniques</h5>
+          <p>
+            My confidence with the following problem solving techniques and processes:
+          </p>
+          <ul>
+            <li>Pseudocode – I like using this a lot, it helps keep my thoughts ordered.</li>
+            <li>Trying something – this strategy is generally my default go-to.</li>
+            <li>Rubber ducking – I am practicing this!</li>
+            <li>Reading error messages – this is something I’m improving at. I wound’t say I’m fluent yet, 
+              but I’m getting better at interpreting them.</li>
+            <li>Console.logging – I use this a lot, especially when things break.</li>
+            <li>Googling – Pretty confident, but I'm still improving at finding the relevant information 
+              efficiently.</li>
+            <li>Asking your peers for help – I haven’t practiced this yet in this course, but I like 
+              talking things through with others. Especially getting a fresh set of eyes on something 
+              when you’ve been staring at it for too long.</li>
+            <li>Asking coaches for help – same as above.</li>
+            <li>Improving your process with reflection – this isn't something I had done formally before, 
+              but I’m finding the Foundations reflections very effective in helping me understand my 
+              own processes.</li>
+          </ul>
+          <!-- Blog content ends here-->
+        </article>
+      </div>
+    </div>
+    <div class="column is-1"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+    </div>
+  </footer>
+
+</body>
+
+</html>
