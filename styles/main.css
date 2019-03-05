@@ -1,5 +1,6 @@
 body {
     font-size: 1.1rem;
+    font-family: 'Karla', sans-serif;
 }
 
 h1 {
@@ -11,6 +12,10 @@ h1 {
 h2 {
     font-family: 'Oswald', sans-serif;
     color: #e98d87 !important;
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
 }
 
 h4 {
@@ -35,11 +40,11 @@ a:hover {
     font-size: 1.5em;
 }
 
-p {
-    font-family: 'Karla', sans-serif;
+.big-link {
+    font-size: 2em;
 }
 
-body {
+p {
     font-family: 'Karla', sans-serif;
 }
 
